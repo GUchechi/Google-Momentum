@@ -1,6 +1,7 @@
 import React from 'react'
 import Moment from 'react-moment'
 import 'moment-timezone'
+import { Greeting, TimeStamp, Welcome } from './TimeStyles'
 
 const Time = () => {
 
@@ -12,17 +13,17 @@ const Time = () => {
     } else if (today.getHours() >= 11 && today.getHours() < 17) {
       return 'Good Afternoon, Godswill Uchechi.'
     } else if (today.getHours() >= 17 && today.getHours() < 24) {
-      return 'Good Evening, Godswill Uchechi.'
+      return 'Good Evening, Godswill Uchechi'
     } else {
       return 'What are you doing up at this hour?'
     }
   } 
 
   return (
-    <div>
-       <p><Moment format='LT'></Moment></p>
-       <p>{greeting()}</p>
-    </div>
+    <Welcome>
+       <TimeStamp><Moment format='LT'></Moment></TimeStamp>
+       <Greeting>{greeting()}</Greeting>
+    </Welcome>
   )
 }
 
