@@ -1,4 +1,5 @@
 import './App.css';
+import Date from './Components/Date';
 import Time from './Components/Time';
 import Weather from './Components/Weather';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Weather />
       <Time />
+      <Date />
     </div>
   );
 }
