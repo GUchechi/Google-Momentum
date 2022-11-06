@@ -8,7 +8,7 @@ export const QuoteContainer = styled.div`
   left: 50%;
   margin-left: -300px;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     width: 350px;
     margin-left: -175%;
   }
@@ -16,5 +16,4 @@ export const QuoteContainer = styled.div`
 
 export const Text = styled.p`
     font-size: 1.2rem;
-    
 `
